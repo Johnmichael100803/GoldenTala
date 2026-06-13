@@ -215,7 +215,7 @@ function spinWheel() {
         currentRotation += extra;
     }
 
-    canvas.style.transition = "transform 6s cubic-bezier(.17,.67,.17,1)";
+    canvas.style.transition = "transform 20s cubic-bezier(.17,.67,.17,1)";
     canvas.style.transform = `rotate(${currentRotation}deg)`;
 
     setTimeout(() => {
@@ -226,7 +226,7 @@ function spinWheel() {
         showWinner(match ? secretWinner : "No winner found");
 
         spinning = false;
-    }, 6000);
+    }, 20000);
 }
 
 // ===============================
