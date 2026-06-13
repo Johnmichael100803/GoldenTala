@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+          <title>Wheel Of Fortune</title> <link rel="stylesheet" href="style.css"> 
+        </head> 
+        <body> 
+            <div class="container"> 
+                <div class="left-panel"> 
+                    <h1>GOLDEN TALA</h1> 
+                    <h2>Wheel Of Fortune</h2> 
+                    <div class="input-group">
+                        <textarea
+                            id="namesBox"
+                            placeholder="Paste names here, one per line..."
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <div id="players"></div> 
+                    <button class="spin-btn" onclick="spinWheel()"> SPIN </button>
+                 </div> <div class="wheel-container">
+                    <img src="logo.png" class="wheel-logo">
+                     <div class="pointer"></div> 
+                 <canvas id="wheel" width="850" height="850"></canvas>
+                </div> 
+            </div> 
+            <div id="winnerModal" class="modal"> 
+                <div class="modal-content">
+                    <h2>🏆 WINNER</h2> 
+                    <h1 id="winnerName"></h1>
+                     <button onclick="closeModal()">Close</button> 
+                    </div> 
+                </div> 
+                <script src="script.js"></script> 
+            </body> 
+            </html>
+

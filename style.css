@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#111827;
+color:white;
+height:100vh;
+overflow:hidden;
+}
+
+.container{
+display:flex;
+height:100vh;
+}
+
+/* LEFT PANEL */
+.left-panel{
+width:350px;
+background:#1f2937;
+padding:20px;
+display:flex;
+flex-direction:column;
+height:100vh;
+gap:15px;
+}
+
+h1{
+margin-bottom:10px;
+}
+
+/* TEXTAREA */
+#namesBox{
+flex:1;
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+resize:none;
+font-size:16px;
+outline:none;
+}
+
+/* HIDE OLD PLAYER LIST */
+#players{
+display:none;
+}
+
+/* BUTTONS */
+button{
+padding:12px 18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* SPIN BUTTON ALWAYS VISIBLE */
+.spin-btn{
+width:100%;
+font-size:22px;
+background:#22c55e;
+color:white;
+font-weight:bold;
+padding:15px;
+flex-shrink:0;
+}
+
+/* WHEEL */
+.wheel-container{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* POINTER */
+.pointer{
+position:absolute;
+top:40px;
+left:50%;
+transform:translateX(-50%);
+width:0;
+height:0;
+border-left:25px solid transparent;
+border-right:25px solid transparent;
+border-top:50px solid white;
+z-index:999;
+}
+
+/* CANVAS */
+canvas{
+background:white;
+border-radius:50%;
+box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+/* MODAL */
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+background:rgba(0,0,0,.8);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:99999;
+backdrop-filter:blur(5px);
+}
+
+.modal-content{
+background:white;
+color:black;
+padding:40px;
+border-radius:20px;
+text-align:center;
+width:400px;
+max-width:90%;
+animation:popup .3s ease-out;
+}
+
+.modal-content h1{
+margin:20px 0;
+font-size:40px;
+}
+
+/* POPUP ANIMATION */
+@keyframes popup{
+0%{
+transform:scale(0.5);
+opacity:0;
+}
+100%{
+transform:scale(1);
+opacity:1;
+}
+}
+
+/* LOGO */
+.wheel-logo{
+position:absolute;
+width:120px;
+height:120px;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+z-index:10;
+pointer-events:none;
+}
