@@ -7,7 +7,7 @@ let currentRotation = 0;
 let spinning = false;
 
 const logo = new Image();
-logo.src = "logo.png";
+logo.src = "logo2.jpg";
 const radius = 410;
 
 const colors = [
