@@ -233,7 +233,7 @@ function spinWheel() {
         showWinner(match ? secretWinner : "No winner found");
 
         spinning = false;
-    }, 7500);
+    }, 20000);
 }
 
 // ===============================
