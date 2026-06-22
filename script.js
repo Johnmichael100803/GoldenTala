@@ -243,7 +243,7 @@ requestAnimationFrame(() => {
         showWinner(match ? secretWinner : "No winner found");
 
         spinning = false;
-    }, 20500);
+    }, 7500);
 }
 
 // ===============================
