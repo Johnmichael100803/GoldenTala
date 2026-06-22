@@ -222,19 +222,9 @@ function spinWheel() {
         currentRotation += extra;
     }
 
-    canvas.style.transition = "none";
+  canvas.style.transition = "transform 7.5s cubic-bezier(.17,.67,.17,1)";
+    canvas.style.transform = `rotate(${currentRotation}deg)`;
 
-requestAnimationFrame(() => {
-
-    canvas.offsetHeight; // force reflow
-
-    canvas.style.transition =
-        "transform 20s cubic-bezier(.17,.67,.17,1)";
-
-    canvas.style.transform =
-        `rotate(${currentRotation}deg)`;
-
-});
     setTimeout(() => {
         const match = names.find(n =>
             n.trim().toLowerCase() === secretWinner.trim().toLowerCase()
