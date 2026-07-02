@@ -1,7 +1,7 @@
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 
-let secretWinner = "LACSON ANN LOUISE";
+let secretWinner = "CLIFFORD JAVIER";
 let names = [];
 let currentRotation = 0;
 let spinning = false;
