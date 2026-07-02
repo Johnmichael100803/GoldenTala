@@ -1,7 +1,7 @@
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 
-let secretWinner = "Khims Ang-els";
+let secretWinner = "LACSON ANN LOUISE";
 let names = [];
 let currentRotation = 0;
 let spinning = false;
@@ -222,7 +222,7 @@ function spinWheel() {
         currentRotation += extra;
     }
 
-    canvas.style.transition = "transform 20.5s cubic-bezier(.17,.67,.17,1)";
+    canvas.style.transition = "transform 22.5s cubic-bezier(.17,.67,.17,1)";
     canvas.style.transform = `rotate(${currentRotation}deg)`;
 
     setTimeout(() => {
@@ -233,7 +233,7 @@ function spinWheel() {
         showWinner(match ? secretWinner : "No winner found");
 
         spinning = false;
-    }, 20500);
+    }, 22500);
 }
 
 // ===============================
